@@ -3,6 +3,7 @@ version = "0.11.1-0"
 supported_platforms = {"linux", "macosx"}
 source = {
   url = "git://github.com/Kong/kong",
+  dir = "../",
   tag = "0.11.1"
 }
 description = {
@@ -278,9 +279,5 @@ build = {
 
     ["kong.plugins.request-termination.handler"] = "kong/plugins/request-termination/handler.lua",
     ["kong.plugins.request-termination.schema"] = "kong/plugins/request-termination/schema.lua",
-  
-    ["kong.plugins.helloworld.handler"] = "kong/plugins/helloworld/handler.lua",
-    ["kong.plugins.helloworld.access"] = "kong/plugins/helloworld/access.lua",
-    ["kong.plugins.helloworld.schema"] = "kong/plugins/helloworld/schema.lua",
   }
 }
