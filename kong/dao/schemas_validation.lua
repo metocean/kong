@@ -206,7 +206,6 @@ function _M.validate_entity(tbl, schema, options)
                 end
               end
             end
-
             if t[column] and t[column] ~= ngx.null and type(t[column]) == "table" then
               -- Actually validating the sub-schema
               local s_ok, s_errors, s_self_check_err = _M.validate_entity(t[column], sub_schema, options)

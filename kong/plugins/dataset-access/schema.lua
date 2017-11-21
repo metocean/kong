@@ -14,8 +14,9 @@ return {
     end
     _,id = next(plugin_t.whitelist or plugin_t.blacklist)
     pattern_check=plugin_t.template:gsub("$dataset_id",id)
-    if ngx.re.match("",pattern_check)==nil then
-      return false, Errors.schema "Syntax error in template"
+    m, err = ngx.re.match("",pattern_check)
+    if (err ~= nil) then
+      return false, Errors.schema ("Syntax error in template: " .. err)
     end
     return true
   end
