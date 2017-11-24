@@ -1,3 +1,7 @@
+This is the MetOcean fork of Kong. Only change from the vendor version is an extra plugin to manage dataset filtering. Will run as a fork for now, possibly split into own repo in future.
+
+Checkout the big monkey!!!!!:
+
 [![][kong-logo]][kong-url]
 
 [![Build Status][badge-travis-image]][badge-travis-url]
