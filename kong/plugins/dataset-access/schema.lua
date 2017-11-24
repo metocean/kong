@@ -1,7 +1,9 @@
 local Errors = require "kong.dao.errors"
 
 return {
+  no_consumer = true,
   fields = {
+    acl_groups = {type = "array", default = {}},
     template = {type = "string", default="/(.*)/$dataset_id"},
     blacklist = {type = "array", default = {}},
     whitelist = {type = "array", default = {}}
