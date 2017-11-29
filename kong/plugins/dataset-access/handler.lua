@@ -12,7 +12,7 @@ function DatasetAccessHandler:access(conf)
   access.execute(conf)
 end
 
-DatasetAccessHandler.PRIORITY = 901
+DatasetAccessHandler.PRIORITY = 905
 DatasetAccessHandler.VERSION = "0.1.0"
 
 return DatasetAccessHandler
