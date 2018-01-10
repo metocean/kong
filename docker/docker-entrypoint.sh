@@ -7,7 +7,7 @@ export KONG_NGINX_DAEMON="off"
 # Setting default prefix (override any existing variable)
 export KONG_PREFIX="/usr/local/kong"
 
-# Prepare Kong prefix
-kong prepare -p "/usr/local/kong"
+# Prepare Kong prefix - this now done in container pilot
+# kong prepare -p "/usr/local/kong"
 
 exec "$@"
