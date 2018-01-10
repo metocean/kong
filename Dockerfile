@@ -28,6 +28,6 @@ COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
 
 ENV CONTAINERPILOT=/etc/containerpilot.json
 
-CMD /bin/containerpilot kong start
+CMD /bin/containerpilot
 
 EXPOSE 8000 8443 8001 7946
