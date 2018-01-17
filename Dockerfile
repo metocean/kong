@@ -22,7 +22,7 @@ RUN export CP_SHA1=6da4a4ab3dd92d8fd009cdb81a4d4002a90c8b7c \
 
 #This is the only custom code 
 COPY kong/plugins/dataset-access /usr/local/share/lua/5.1/kong/plugins/dataset-access
-COPY kong/plugins/dataset-access /usr/local/share/lua/5.1/kong/plugins/ip-auth
+COPY kong/plugins/ip-auth /usr/local/share/lua/5.1/kong/plugins/ip-auth
 
 COPY docker/docker-entrypoint.sh /docker-entrypoint.sh
 
