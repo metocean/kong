@@ -93,10 +93,10 @@ function IPAuthHandler:access(conf)
   else
     local cache = singletons.cache
     local dao       = singletons.dao
-    local consumer_cache_key = singletons.dao.consumers:cache_key(conf.authenticate_as)
+    local consumer_cache_key = singletons.dao.consumers:cache_key(conf.authenticate_as_UUID)
     local consumer, err = singletons.cache:get(consumer_cache_key, nil,
                                                  load_consumer,
-                                                 conf.authenticate_as, true)
+                                                 conf.authenticate_as_UUID, true)
     if err then
       return responses.send_HTTP_INTERNAL_SERVER_ERROR(err)
     end
