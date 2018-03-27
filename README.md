@@ -1,4 +1,8 @@
-This is the MetOcean fork of Kong. Only change from the vendor version is an extra plugin to manage dataset filtering. Will run as a fork for now, possibly split into own repo in future.
+This is the MetOcean fork of Kong. Only change from the vendor version is are extra plugins:
+[Dataset filtering](kong/plugins/dataset-acess)
+[IP passthrough](kong/plugins/ip-auth)
+
+Will run as a fork for now, possibly split into own repo in future.
 
 Checkout the big monkey!!!!!:
 
