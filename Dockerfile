@@ -1,4 +1,4 @@
-FROM kong:0.11.1-alpine
+FROM kong:0.13.1-alpine
 
 RUN apk update \
     && apk add unzip curl \
