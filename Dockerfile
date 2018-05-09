@@ -4,7 +4,7 @@ RUN apk update \
     && apk add unzip curl \
     && rm -rf /var/cache/apk/*
 
-ENV CONSUL_VERSION=0.7.1
+ENV CONSUL_VERSION=1.0.6
 RUN curl -o consul.zip -L https://releases.hashicorp.com/consul/${CONSUL_VERSION}/consul_${CONSUL_VERSION}_linux_amd64.zip
 RUN unzip consul.zip
 RUN chmod +x consul
